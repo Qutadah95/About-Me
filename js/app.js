@@ -16,8 +16,11 @@ if (answer==='y'||answer==='yah'||answer==='yes') {
     alert('you are right');
     sum++;
     console.log(sum);
-} else {
+}  else if (answer==='n' || answer==='no' || answer==='nop') {
     alert('you are wrong');
+}
+else{
+    alert('please answer with ( yes , yah , y ,no , nop , no )');
 }
 
 
@@ -31,8 +34,11 @@ if (answer==='y'||answer==='yah'||answer==='yes') {
     sum++;
     console.log(sum);
     
-} else {
+}  else if (answer==='n' || answer==='no' || answer==='nop') {
     alert('you are wrong');
+}
+else{
+    alert('please answer with ( yes , yah , y ,no , nop , no )');
 }
 
 
@@ -46,8 +52,11 @@ if (answer==='y'||answer==='yah'||answer==='yes') {
     sum++;
     console.log(sum);
     
-} else {
+}  else if (answer==='n' || answer==='no' || answer==='nop') {
     alert('you are wrong');
+}
+else{
+    alert('please answer with ( yes , yah , y ,no , nop , no )');
 }
 
 
@@ -61,8 +70,11 @@ if (answer==='y'||answer==='yah'||answer==='yes') {
     sum++;
 
     console.log(sum);
-} else {
+} else if (answer==='n' || answer==='no' || answer==='nop') {
     alert('you are wrong');
+}
+else{
+    alert('please answer with ( yes , yah , y ,no , nop , no )');
 }
 
 
@@ -76,8 +88,11 @@ if (answer==='y'||answer==='yah'||answer==='yes') {
     sum++;
     console.log(sum);
     
-} else {
+} else if (answer==='n' || answer==='no' || answer==='nop') {
     alert('you are wrong');
+}
+else{
+    alert('please answer with ( yes , yah , y ,no , nop , no )');
 }
 
 
@@ -120,7 +135,7 @@ console.log(ans);
 let q = 0 ;
 for (let i = 0; i < 5; i++) {
     q++;
-    if (ans==='mitsubishi',ans==='volvo',ans==='bmw',ans==='mercedes',ans==='ford') { 
+    if (ans==='mitsubishi' || ans==='volvo'|| ans==='bmw' || ans==='mercedes' || ans==='ford') { 
         
         alert('you are right');
         sum++;
