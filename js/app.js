@@ -29,7 +29,8 @@ function question1(){
 question1();
 
 function question2(){
-    answer=prompt('do i create this website as assessment for lab ?');
+
+  let  answer=prompt('do i create this website as assessment for lab ?');
 
 answer=answer.toLowerCase();
 
@@ -49,7 +50,7 @@ question2();
 
 
 function question3(){
-    answer=prompt('do i learn programming in this course ?');
+   let answer=prompt('do i learn programming in this course ?');
 
  answer=answer.toLowerCase();
 
@@ -71,7 +72,7 @@ question3();
 
 
 function question4(){
-    answer=prompt(' i am 25 years old ,is that right ? ');
+  let  answer=prompt(' i am 25 years old ,is that right ? ');
 
     answer=answer.toLowerCase();
    
@@ -93,7 +94,7 @@ question4();
 
 function question5(){
 
-    answer=prompt('did i study in one of a jordanian university ? ');
+  let  answer=prompt('did i study in one of a jordanian university ? ');
 
     answer=answer.toLowerCase();
    
