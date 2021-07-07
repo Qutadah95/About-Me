@@ -6,22 +6,27 @@ let Name=prompt('what is your name ?');
 alert('Hello '+Name);
 
 alert('let us play a gussing game ');
-let answer=prompt('is my name Qutadah Almomani ?');
 
- answer=answer.toLowerCase();
- 
+// 1 Q
+function question1(){
+    let answer=prompt('is my name Qutadah Almomani ?');
 
- console.log(answer);
-if (answer==='y'||answer==='yah'||answer==='yes') {
-    alert('you are right');
-    sum++;
-    console.log(sum);
-}  else if (answer==='n' || answer==='no' || answer==='nop') {
-    alert('you are wrong');
+    answer=answer.toLowerCase();
+    
+   
+    console.log(answer);
+   if (answer==='y'||answer==='yah'||answer==='yes') {
+       alert('you are right');
+       sum++;
+       console.log(sum);
+   }  else if (answer==='n' || answer==='no' || answer==='nop') {
+       alert('you are wrong');
+   }
+   else{
+       alert('please answer with ( yes , yah , y ,no , nop , no )');
+   }
 }
-else{
-    alert('please answer with ( yes , yah , y ,no , nop , no )');
-}
+question1();
 
 
 answer=prompt('do i create this website as assessment for lab ?');
