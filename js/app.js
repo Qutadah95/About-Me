@@ -147,36 +147,42 @@ console.log(num);
 }
 question6();
 
-
-let cars = ["mitsubishi", "Volvo", "BMW","mercedes","ford"];
-let ans =prompt('what is my favorite car brand ');
-
-
-ans=ans.toLowerCase();
-console.log(ans);
-
-let q = 0 ;
-for (let i = 0; i < 5; i++) {
-    q++;
-    if (ans==='mitsubishi' || ans==='volvo'|| ans==='bmw' || ans==='mercedes' || ans==='ford') { 
-        
-        alert('you are right');
-        sum++;
-        console.log(sum);
-       break;
-        
-        
-   
-        
-    }
-     else {ans =prompt('wrong guess try again' );
+function question7(){
+    let cars = ["mitsubishi", "Volvo", "BMW","mercedes","ford"];
+    let ans =prompt('what is my favorite car brand ');
+    
+    
+    ans=ans.toLowerCase();
+    console.log(ans);
+    
+    let q = 0 ;
+    for (let i = 0; i < 5; i++) {
+        q++;
+        if (ans==='mitsubishi' || ans==='volvo'|| ans==='bmw' || ans==='mercedes' || ans==='ford') { 
+            
+            alert('you are right');
+            sum++;
+            console.log(sum);
+           break;
+            
+            
        
+            
+        }
+         else {ans =prompt('wrong guess try again' );
+           
+        }
+         
     }
-     
+    if (q==5){
+        alert('the right answer is "mitsubishi", "Volvo", "BMW","mercedes","ford"') 
+    }
+    console.log(ans);
+   
+
 }
-if (q==5){
-    alert('the right answer is "mitsubishi", "Volvo", "BMW","mercedes","ford"') 
-}
-console.log(ans);
+question7();
 
 alert('thank you ' + Name + ' for play this game your score is '+sum+' /7 have a nice time in our website');
+
+
