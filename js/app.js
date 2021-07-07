@@ -70,23 +70,26 @@ else{
 question3();
 
 
+function question4(){
+    answer=prompt(' i am 25 years old ,is that right ? ');
 
-answer=prompt(' i am 25 years old ,is that right ? ');
+    answer=answer.toLowerCase();
+   
+    console.log(answer);
+   if (answer==='y'||answer==='yah'||answer==='yes') {
+       alert('you are right');
+       sum++;
+   
+       console.log(sum);
+   } else if (answer==='n' || answer==='no' || answer==='nop') {
+       alert('you are wrong');
+   }
+   else{
+       alert('please answer with ( yes , yah , y ,no , nop , no )');
+   }
 
- answer=answer.toLowerCase();
-
- console.log(answer);
-if (answer==='y'||answer==='yah'||answer==='yes') {
-    alert('you are right');
-    sum++;
-
-    console.log(sum);
-} else if (answer==='n' || answer==='no' || answer==='nop') {
-    alert('you are wrong');
 }
-else{
-    alert('please answer with ( yes , yah , y ,no , nop , no )');
-}
+question4();
 
 
 answer=prompt('did i study in one of a jordanian university ? ');
