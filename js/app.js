@@ -149,36 +149,62 @@ console.log(num);
 question6();
 
 function question7(){
-    let cars = ["mitsubishi", "Volvo", "BMW","mercedes","ford"];
-    let ans =prompt('what is my favorite car brand ');
-    
+    let cars = ['mitsubishi', 'volvo', 'bmw','mercedes','ford'];
+    let ans='';
     
     ans=ans.toLowerCase();
     console.log(ans);
+  loop:for ( let j=0 ; j<6 ; j++ ){
+     ans =prompt('what is my favorite car brand ');
+    ans=ans.toLowerCase();
+ for ( let i=0 ; i< cars.length ; i++){
+
+console.log(cars[i]);
+if(cars[i]===ans){
+    sum++;
+    console.log(sum);
+    alert('you are right');
+           
+           break loop;
+}
+
+
+}   
+    if ( j===5){
+    alert('the right answer is ' + cars);
     
-    let q = 0 ;
-    for (let i = 0; i < 5; i++) {
-        q++;
-        if (ans==='mitsubishi' || ans==='volvo'|| ans==='bmw' || ans==='mercedes' || ans==='ford') { 
+
+    }else if( j<6){
+        alert('wrong guess try again');
+    }
+  
+   
+ 
+    }
+    console.log(ans);
+    // let q = 0 ;
+    // for (let i = 0; i < 5; i++) {
+    //     q++;
+    //     if (ans==='mitsubishi' || ans==='volvo'|| ans==='bmw' || ans==='mercedes' || ans==='ford') { 
             
-            alert('you are right');
-            sum++;
-            console.log(sum);
-           break;
+    //         alert('you are right');
+    //         sum++;
+    //         console.log(sum);
+    //        break;
             
             
        
             
-        }
-         else {ans =prompt('wrong guess try again' );
+    //     }
+    //      else {ans =prompt('wrong guess try again' );
            
-        }
+    //     }
          
-    }
-    if (q==5){
-        alert('the right answer is "mitsubishi", "Volvo", "BMW","mercedes","ford"') 
-    }
-    console.log(ans);
+    // }
+    // if (q==5){
+    //     alert('the right answer is "mitsubishi", "Volvo", "BMW","mercedes","ford"') 
+    // }
+    // console.log(ans);
    
 
 }
