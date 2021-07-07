@@ -28,23 +28,25 @@ function question1(){
 }
 question1();
 
+function question2(){
+    answer=prompt('do i create this website as assessment for lab ?');
 
-answer=prompt('do i create this website as assessment for lab ?');
+answer=answer.toLowerCase();
 
- answer=answer.toLowerCase();
-
- console.log(answer);
+console.log(answer);
 if (answer==='y'||answer==='yah'||answer==='yes') {
-    alert('you are right');
-    sum++;
-    console.log(sum);
-    
+   alert('you are right');
+   sum++;
+   console.log(sum);
+   
 }  else if (answer==='n' || answer==='no' || answer==='nop') {
-    alert('you are wrong');
+   alert('you are wrong');
 }
 else{
-    alert('please answer with ( yes , yah , y ,no , nop , no )');
-}
+   alert('please answer with ( yes , yah , y ,no , nop , no )');
+}}
+question2();
+
 
 
 answer=prompt('do i learn programming in this course ?');
