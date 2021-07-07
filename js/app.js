@@ -114,9 +114,8 @@ function question5(){
 }
 question5();
 
-
-
-let num=prompt('guess a number betwen 1 and 50 ');
+function question6(){
+    let num=prompt('guess a number betwen 1 and 50 ');
 
 
 for (let i = 1; i < 4; i++) {
@@ -144,6 +143,11 @@ for (let i = 1; i < 4; i++) {
  
 alert('the corrict answer is 22');
 console.log(num);
+
+}
+question6();
+
+
 let cars = ["mitsubishi", "Volvo", "BMW","mercedes","ford"];
 let ans =prompt('what is my favorite car brand ');
 
