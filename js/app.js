@@ -91,23 +91,28 @@ function question4(){
 }
 question4();
 
+function question5(){
 
-answer=prompt('did i study in one of a jordanian university ? ');
+    answer=prompt('did i study in one of a jordanian university ? ');
 
- answer=answer.toLowerCase();
+    answer=answer.toLowerCase();
+   
+    console.log(answer);
+   if (answer==='y'||answer==='yah'||answer==='yes') {
+       alert('you are right');
+       sum++;
+       console.log(sum);
+       
+   } else if (answer==='n' || answer==='no' || answer==='nop') {
+       alert('you are wrong');
+   }
+   else{
+       alert('please answer with ( yes , yah , y ,no , nop , no )');
+   }
 
- console.log(answer);
-if (answer==='y'||answer==='yah'||answer==='yes') {
-    alert('you are right');
-    sum++;
-    console.log(sum);
-    
-} else if (answer==='n' || answer==='no' || answer==='nop') {
-    alert('you are wrong');
+
 }
-else{
-    alert('please answer with ( yes , yah , y ,no , nop , no )');
-}
+question5();
 
 
 
