@@ -6,25 +6,50 @@ let Name=prompt('what is your name ?');
 alert('Hello '+Name);
 
 alert('let us play a gussing game ');
-let answer=prompt('is my name Qutadah Almomani ?');
 
- answer=answer.toLowerCase();
- 
+// 1 Q
+function question1(){
+    let answer=prompt('is my name Qutadah Almomani ?');
 
- console.log(answer);
+    answer=answer.toLowerCase();
+    
+   
+    console.log(answer);
+   if (answer==='y'||answer==='yah'||answer==='yes') {
+       alert('you are right');
+       sum++;
+       console.log(sum);
+   }  else if (answer==='n' || answer==='no' || answer==='nop') {
+       alert('you are wrong');
+   }
+   else{
+       alert('please answer with ( yes , yah , y ,no , nop , no )');
+   }
+}
+question1();
+
+function question2(){
+    answer=prompt('do i create this website as assessment for lab ?');
+
+answer=answer.toLowerCase();
+
+console.log(answer);
 if (answer==='y'||answer==='yah'||answer==='yes') {
-    alert('you are right');
-    sum++;
-    console.log(sum);
+   alert('you are right');
+   sum++;
+   console.log(sum);
+   
 }  else if (answer==='n' || answer==='no' || answer==='nop') {
-    alert('you are wrong');
+   alert('you are wrong');
 }
 else{
-    alert('please answer with ( yes , yah , y ,no , nop , no )');
-}
+   alert('please answer with ( yes , yah , y ,no , nop , no )');
+}}
+question2();
 
 
-answer=prompt('do i create this website as assessment for lab ?');
+function question3(){
+    answer=prompt('do i learn programming in this course ?');
 
  answer=answer.toLowerCase();
 
@@ -41,63 +66,56 @@ else{
     alert('please answer with ( yes , yah , y ,no , nop , no )');
 }
 
-
-answer=prompt('do i learn programming in this course ?');
-
- answer=answer.toLowerCase();
-
- console.log(answer);
-if (answer==='y'||answer==='yah'||answer==='yes') {
-    alert('you are right');
-    sum++;
-    console.log(sum);
-    
-}  else if (answer==='n' || answer==='no' || answer==='nop') {
-    alert('you are wrong');
 }
-else{
-    alert('please answer with ( yes , yah , y ,no , nop , no )');
+question3();
+
+
+function question4(){
+    answer=prompt(' i am 25 years old ,is that right ? ');
+
+    answer=answer.toLowerCase();
+   
+    console.log(answer);
+   if (answer==='y'||answer==='yah'||answer==='yes') {
+       alert('you are right');
+       sum++;
+   
+       console.log(sum);
+   } else if (answer==='n' || answer==='no' || answer==='nop') {
+       alert('you are wrong');
+   }
+   else{
+       alert('please answer with ( yes , yah , y ,no , nop , no )');
+   }
+
 }
+question4();
+
+function question5(){
+
+    answer=prompt('did i study in one of a jordanian university ? ');
+
+    answer=answer.toLowerCase();
+   
+    console.log(answer);
+   if (answer==='y'||answer==='yah'||answer==='yes') {
+       alert('you are right');
+       sum++;
+       console.log(sum);
+       
+   } else if (answer==='n' || answer==='no' || answer==='nop') {
+       alert('you are wrong');
+   }
+   else{
+       alert('please answer with ( yes , yah , y ,no , nop , no )');
+   }
 
 
-answer=prompt(' i am 25 years old ,is that right ? ');
-
- answer=answer.toLowerCase();
-
- console.log(answer);
-if (answer==='y'||answer==='yah'||answer==='yes') {
-    alert('you are right');
-    sum++;
-
-    console.log(sum);
-} else if (answer==='n' || answer==='no' || answer==='nop') {
-    alert('you are wrong');
 }
-else{
-    alert('please answer with ( yes , yah , y ,no , nop , no )');
-}
+question5();
 
-
-answer=prompt('did i study in one of a jordanian university ? ');
-
- answer=answer.toLowerCase();
-
- console.log(answer);
-if (answer==='y'||answer==='yah'||answer==='yes') {
-    alert('you are right');
-    sum++;
-    console.log(sum);
-    
-} else if (answer==='n' || answer==='no' || answer==='nop') {
-    alert('you are wrong');
-}
-else{
-    alert('please answer with ( yes , yah , y ,no , nop , no )');
-}
-
-
-
-let num=prompt('guess a number betwen 1 and 50 ');
+function question6(){
+    let num=prompt('guess a number betwen 1 and 50 ');
 
 
 for (let i = 1; i < 4; i++) {
@@ -125,35 +143,46 @@ for (let i = 1; i < 4; i++) {
  
 alert('the corrict answer is 22');
 console.log(num);
-let cars = ["mitsubishi", "Volvo", "BMW","mercedes","ford"];
-let ans =prompt('what is my favorite car brand ');
 
+}
+question6();
 
-ans=ans.toLowerCase();
-console.log(ans);
-
-let q = 0 ;
-for (let i = 0; i < 5; i++) {
-    q++;
-    if (ans==='mitsubishi' || ans==='volvo'|| ans==='bmw' || ans==='mercedes' || ans==='ford') { 
-        
-        alert('you are right');
-        sum++;
-        console.log(sum);
-       break;
-        
-        
-   
-        
-    }
-     else {ans =prompt('wrong guess try again' );
+function question7(){
+    let cars = ["mitsubishi", "Volvo", "BMW","mercedes","ford"];
+    let ans =prompt('what is my favorite car brand ');
+    
+    
+    ans=ans.toLowerCase();
+    console.log(ans);
+    
+    let q = 0 ;
+    for (let i = 0; i < 5; i++) {
+        q++;
+        if (ans==='mitsubishi' || ans==='volvo'|| ans==='bmw' || ans==='mercedes' || ans==='ford') { 
+            
+            alert('you are right');
+            sum++;
+            console.log(sum);
+           break;
+            
+            
        
+            
+        }
+         else {ans =prompt('wrong guess try again' );
+           
+        }
+         
     }
-     
+    if (q==5){
+        alert('the right answer is "mitsubishi", "Volvo", "BMW","mercedes","ford"') 
+    }
+    console.log(ans);
+   
+
 }
-if (q==5){
-    alert('the right answer is "mitsubishi", "Volvo", "BMW","mercedes","ford"') 
-}
-console.log(ans);
+question7();
 
 alert('thank you ' + Name + ' for play this game your score is '+sum+' /7 have a nice time in our website');
+
+
