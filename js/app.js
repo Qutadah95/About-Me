@@ -48,8 +48,8 @@ else{
 question2();
 
 
-
-answer=prompt('do i learn programming in this course ?');
+function question3(){
+    answer=prompt('do i learn programming in this course ?');
 
  answer=answer.toLowerCase();
 
@@ -65,6 +65,10 @@ if (answer==='y'||answer==='yah'||answer==='yes') {
 else{
     alert('please answer with ( yes , yah , y ,no , nop , no )');
 }
+
+}
+question3();
+
 
 
 answer=prompt(' i am 25 years old ,is that right ? ');
