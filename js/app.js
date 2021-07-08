@@ -7,18 +7,15 @@ alert('Hello '+Name);
 
 alert('let us play a gussing game ');
 
-// 1 Q
 function question1(){
     let answer=prompt('is my name Qutadah Almomani ?');
 
     answer=answer.toLowerCase();
     
    
-    console.log(answer);
    if (answer==='y'||answer==='yah'||answer==='yes') {
        alert('you are right');
        sum++;
-       console.log(sum);
    }  else if (answer==='n' || answer==='no' || answer==='nop') {
        alert('you are wrong');
    }
@@ -34,11 +31,9 @@ function question2(){
 
 answer=answer.toLowerCase();
 
-console.log(answer);
 if (answer==='y'||answer==='yah'||answer==='yes') {
    alert('you are right');
    sum++;
-   console.log(sum);
    
 }  else if (answer==='n' || answer==='no' || answer==='nop') {
    alert('you are wrong');
@@ -54,11 +49,9 @@ function question3(){
 
  answer=answer.toLowerCase();
 
- console.log(answer);
 if (answer==='y'||answer==='yah'||answer==='yes') {
     alert('you are right');
     sum++;
-    console.log(sum);
     
 }  else if (answer==='n' || answer==='no' || answer==='nop') {
     alert('you are wrong');
@@ -76,12 +69,10 @@ function question4(){
 
     answer=answer.toLowerCase();
    
-    console.log(answer);
    if (answer==='y'||answer==='yah'||answer==='yes') {
        alert('you are right');
        sum++;
    
-       console.log(sum);
    } else if (answer==='n' || answer==='no' || answer==='nop') {
        alert('you are wrong');
    }
@@ -98,11 +89,9 @@ function question5(){
 
     answer=answer.toLowerCase();
    
-    console.log(answer);
    if (answer==='y'||answer==='yah'||answer==='yes') {
        alert('you are right');
        sum++;
-       console.log(sum);
        
    } else if (answer==='n' || answer==='no' || answer==='nop') {
        alert('you are wrong');
@@ -124,7 +113,6 @@ for (let i = 1; i < 4; i++) {
     if(num===22)
     {
         sum++;
-        console.log(sum);
          alert('you are right');
         break;
        
@@ -143,7 +131,6 @@ for (let i = 1; i < 4; i++) {
 
  
 alert('the corrict answer is 22');
-console.log(num);
 
 }
 question6();
@@ -153,16 +140,13 @@ function question7(){
     let ans='';
     
     ans=ans.toLowerCase();
-    console.log(ans);
   loop:for ( let j=0 ; j<6 ; j++ ){
      ans =prompt('what is my favorite car brand ');
     ans=ans.toLowerCase();
  for ( let i=0 ; i< cars.length ; i++){
 
-console.log(cars[i]);
 if(cars[i]===ans){
     sum++;
-    console.log(sum);
     alert('you are right');
            
            break loop;
@@ -181,30 +165,7 @@ if(cars[i]===ans){
    
  
     }
-    console.log(ans);
-    // let q = 0 ;
-    // for (let i = 0; i < 5; i++) {
-    //     q++;
-    //     if (ans==='mitsubishi' || ans==='volvo'|| ans==='bmw' || ans==='mercedes' || ans==='ford') { 
-            
-    //         alert('you are right');
-    //         sum++;
-    //         console.log(sum);
-    //        break;
-            
-            
-       
-            
-    //     }
-    //      else {ans =prompt('wrong guess try again' );
-           
-    //     }
-         
-    // }
-    // if (q==5){
-    //     alert('the right answer is "mitsubishi", "Volvo", "BMW","mercedes","ford"') 
-    // }
-    // console.log(ans);
+ 
    
 
 }
